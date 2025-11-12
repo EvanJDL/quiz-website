@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="quiz-container">
+        <div class="quiz-header">
+          <h1>Quiz Application</h1>
+          <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+          </div>
+          <p class="question-counter" id="questionCounter">Question 1 of 5</p>
+        </div>
+
+        <div class="quiz-content" id="quizContent">
+          <div class="question-container" id="questionContainer">
+            <h2 class="question" id="questionText"></h2>
+            <div class="answers" id="answersContainer"></div>
+          </div>
+
+          <div
+            class="result-container"
+            id="resultContainer"
+            style="display: none"
+          >
+            <h2>Quiz Complete!</h2>
+            <div class="score-display">
+              <p class="score-text">Your Score:</p>
+              <p class="score-value" id="scoreValue"></p>
+              <p class="score-percentage" id="scorePercentage"></p>
+            </div>
+            <button class="btn btn-restart" id="restartBtn">
+              Restart Quiz
+            </button>
+          </div>
+
+          <div class="feedback" id="feedback" style="display: none"></div>
+          <div class="explanation" id="explanation" style="display: none"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
